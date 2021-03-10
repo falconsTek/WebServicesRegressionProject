@@ -175,7 +175,7 @@
   </con:testStep>
   <con:testStep type="restrequest" name="REST Request" id="37da1a19-4ed3-4c69-baa2-64de3c4ad1bb">
     <con:settings/>
-    <con:config service="Insurance" resourcePath="/api/v1/user" methodName="Method 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config service="Insurance" resourcePath="/api/v1/user/{userID}" methodName="Method 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest name="REST Request" id="16fea692-7537-4215-a81a-eedde5782275" mediaType="application/json" postQueryString="false">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -257,7 +257,7 @@
         </con:assertion>
         <con:assertion type="Response SLA Assertion" id="561705a1-fd57-4b1e-93ef-4113d9278ee2" name="Response SLA">
           <con:configuration>
-            <SLA>1000</SLA>
+            <SLA>2000</SLA>
           </con:configuration>
         </con:assertion>
         <con:assertion type="MessageContentAssertion" id="748a3644-f8e8-4550-8cd4-6e2f909c1cdc" name="Message Content Assertion">
@@ -270,6 +270,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>200</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -280,6 +281,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>success</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -290,6 +292,7 @@
               <con:operator>exists</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>156</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -300,6 +303,7 @@
               <con:operator>exists</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>2021-03-10 00:03:29</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -310,6 +314,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['email']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -320,6 +325,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['title']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -330,6 +336,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['firstName']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -340,6 +347,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['lastName']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -350,6 +358,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['gender']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -360,6 +369,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['maritalStatus']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -370,6 +380,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['employmentStatus']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -380,6 +391,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['dateOfBirth']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:elements>
@@ -390,6 +402,7 @@
               <con:operator>=</con:operator>
               <con:enabled>true</con:enabled>
               <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['languagePref']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
               <con:numberType>false</con:numberType>
             </con:elements>
             <con:originalMessage><![CDATA[<Response xmlns="https://www.test-insurance.com/api/v1/user">

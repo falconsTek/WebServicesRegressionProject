@@ -2,3 +2,6 @@ Insurance\user.xml
 Insurance\payment.xml
 Insurance\secondary-user.xml
 Regression-Test-Suite\Create-User.xml
+Regression-Test-Suite\Get-Current-User.xml
+Regression-Test-Suite\Add-Secondary-User.xml
+Regression-Test-Suite\Delete-Current-User.xml

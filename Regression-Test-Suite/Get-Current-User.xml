@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="86fd5fef-7e3a-4c56-aad7-2fa74c6ba369" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Get Current User" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="86fd5fef-7e3a-4c56-aad7-2fa74c6ba369fileName">Get-Current-User</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="REST Request" id="41624b70-97de-4a27-a4b1-ab09d7554cf0">
+    <con:settings/>
+    <con:config service="Insurance" resourcePath="/api/v1/user/{userID}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="845f6ed4-d7f1-4e3f-87d8-5f4323bc4948" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="7eddc130-6469-41d7-9092-b4f5adc937f7" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="34f13dc7-0c05-46b6-b268-1d7e9b540683" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="5ac6b923-0b0f-4ea0-9d4f-32370fd87c57" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:account[1]/ns1:accountId[1]</con:xpath>
+              <con:element>accountId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Create User#REST Request]#Response#$['data']['account']['accountId']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:account[1]/ns1:createDate[1]</con:xpath>
+              <con:element>createDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-03-10T01:04:16.000Z</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:id[1]</con:xpath>
+              <con:element>id</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>257</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:email[1]</con:xpath>
+              <con:element>email</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Create User#REST Request]#RawRequest#$['primaryPerson']['email']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:firstName[1]</con:xpath>
+              <con:element>firstName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Create User#REST Request]#RawRequest#$['primaryPerson']['firstName']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:lastName[1]</con:xpath>
+              <con:element>lastName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Create User#REST Request]#RawRequest#$['primaryPerson']['lastName']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:employmentStatus[1]</con:xpath>
+              <con:element>employmentStatus</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Student</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:languagePref[1]</con:xpath>
+              <con:element>languagePref</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>CjPI</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:created_at[1]</con:xpath>
+              <con:element>created_at</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-03-10 01:04:16</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:updated_at[1]</con:xpath>
+              <con:element>updated_at</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-03-10 01:04:16</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:id[1]</con:xpath>
+              <con:element>id</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>226</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:personId[1]</con:xpath>
+              <con:element>personId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>257</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:addressType[1]</con:xpath>
+              <con:element>addressType</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Falkland Islands (Malvinas)</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:addressLine1[1]</con:xpath>
+              <con:element>addressLine1</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>35867 Robinson Ave.</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:city[1]</con:xpath>
+              <con:element>city</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Baldwin Park</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:state[1]</con:xpath>
+              <con:element>state</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Hawaii</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:postalCode[1]</con:xpath>
+              <con:element>postalCode</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>05384</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:countryCode[1]</con:xpath>
+              <con:element>countryCode</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>3</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:created_at[1]</con:xpath>
+              <con:element>created_at</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-03-10 01:04:16</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonMailingAddress[1]/ns1:updated_at[1]</con:xpath>
+              <con:element>updated_at</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-03-10 01:04:16</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryEmailAddress[1]/ns1:personId[1]</con:xpath>
+              <con:element>personId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>257</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryEmailAddress[1]/ns1:emailAddress[1]</con:xpath>
+              <con:element>emailAddress</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>omar.gross@hotmail.com</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonPhone[1]/ns1:personId[1]</con:xpath>
+              <con:element>personId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>257</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonPhone[1]/ns1:phoneNumber[1]</con:xpath>
+              <con:element>phoneNumber</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>757-182-2669</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonPhone[1]/ns1:phoneExtension[1]</con:xpath>
+              <con:element>phoneExtension</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>OZ</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPersonPhone[1]/ns1:phoneTime[1]</con:xpath>
+              <con:element>phoneTime</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>morning</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:meta[1]/ns1:code[1]</con:xpath>
+              <con:element>code</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>200</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:meta[1]/ns1:status[1]</con:xpath>
+              <con:element>status</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>success</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:sessionID[1]</con:xpath>
+              <con:element>sessionID</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjExOCwiaWF0IjoxNjE0OTczNzA2fQ.Xhb0ty46UbE-qRDPpfSh71176xmAhsgff3ZyZe6TibE</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:title[1]</con:xpath>
+              <con:element>title</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[Regression Test Suite#Create User#REST Request]#RawRequest#$['primaryPerson']['title']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="https://www.test-insurance.com/api/v1/user">
+   <meta>
+      <code>200</code>
+      <status>success</status>
+   </meta>
+   <data>
+      <sessionID>Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjExOCwiaWF0IjoxNjE0OTczNzA2fQ.Xhb0ty46UbE-qRDPpfSh71176xmAhsgff3ZyZe6TibE</sessionID>
+      <account>
+         <accountId>257</accountId>
+         <createDate>2021-03-10T01:04:16.000Z</createDate>
+      </account>
+      <processAsRenewal/>
+      <primaryPerson>
+         <id>257</id>
+         <username null="true"/>
+         <email>omar.gross@hotmail.com</email>
+         <title>Mr.</title>
+         <firstName>Frances</firstName>
+         <lastName>Peters</lastName>
+         <suffix null="true"/>
+         <gender>Male</gender>
+         <maritalStatus>Married</maritalStatus>
+         <employmentStatus>Student</employmentStatus>
+         <dateOfBirth>1984-01-12T00:00:00.000Z</dateOfBirth>
+         <languagePref>CjPI</languagePref>
+         <password null="true"/>
+         <processAsRenewal null="true"/>
+         <created_at>2021-03-10 01:04:16</created_at>
+         <updated_at>2021-03-10 01:04:16</updated_at>
+         <user_id null="true"/>
+      </primaryPerson>
+      <primaryPersonMailingAddress>
+         <id>226</id>
+         <personId>257</personId>
+         <addressType>Falkland Islands (Malvinas)</addressType>
+         <addressLine1>35867 Robinson Ave.</addressLine1>
+         <addressLine2 null="true"/>
+         <addressLine3 null="true"/>
+         <city>Baldwin Park</city>
+         <state>Hawaii</state>
+         <postalCode>05384</postalCode>
+         <countryCode>3</countryCode>
+         <created_at>2021-03-10 01:04:16</created_at>
+         <updated_at>2021-03-10 01:04:16</updated_at>
+      </primaryPersonMailingAddress>
+      <primaryEmailAddress>
+         <personId>257</personId>
+         <emailAddress>omar.gross@hotmail.com</emailAddress>
+      </primaryEmailAddress>
+      <primaryPersonPhone>
+         <personId>257</personId>
+         <phoneNumber>757-182-2669</phoneNumber>
+         <phoneExtension>OZ</phoneExtension>
+         <phoneTime>morning</phoneTime>
+         <phoneType>home</phoneType>
+      </primaryPersonPhone>
+      <secondaryPerson/>
+   </data>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="userID" value="${#[Regression Test Suite#Create User#REST Request]#Response#$['data']['account']['accountId']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>userID</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

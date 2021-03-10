@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="2145bf46-4fac-4571-b11a-9c6df15e7b4f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Add Secondary User" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="2145bf46-4fac-4571-b11a-9c6df15e7b4ffileName">Add-Secondary-User</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Data Source" id="165a363b-efee-4aa2-82d4-ff40666eb3b3">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>17</generatorsTotalNumber>
+          <lastSelectedProperty>8</lastSelectedProperty>
+          <GeneratorType0>STR</GeneratorType0>
+          <PropertyName0>username</PropertyName0>
+          <repetitionCountusername>0</repetitionCountusername>
+          <repeatValuesusername>false</repeatValuesusername>
+          <PasswordDataGeneratorUseSpacesusername>false</PasswordDataGeneratorUseSpacesusername>
+          <PasswordDataGeneratorUsePunctuationMarksusername>false</PasswordDataGeneratorUsePunctuationMarksusername>
+          <PasswordDataGeneratorUseLettersusername>true</PasswordDataGeneratorUseLettersusername>
+          <PasswordDataGeneratorUseDigitsusername>false</PasswordDataGeneratorUseDigitsusername>
+          <PasswordDataGeneratorMaxCharacterCountusername>10</PasswordDataGeneratorMaxCharacterCountusername>
+          <PasswordDataGeneratorMinCharacterCountusername>5</PasswordDataGeneratorMinCharacterCountusername>
+          <GeneratorType1>EMAIL</GeneratorType1>
+          <PropertyName1>email</PropertyName1>
+          <repetitionCountemail>0</repetitionCountemail>
+          <repeatValuesemail>false</repeatValuesemail>
+          <GeneratorType2>SET</GeneratorType2>
+          <PropertyName2>title</PropertyName2>
+          <repetitionCounttitle>0</repetitionCounttitle>
+          <repeatValuestitle>false</repeatValuestitle>
+          <ValueFromSetIsSequenceValuetitle>false</ValueFromSetIsSequenceValuetitle>
+          <ValueFromSetStringstitle>Mr.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Ms.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Mrs.</ValueFromSetStringstitle>
+          <GeneratorType3>NAME</GeneratorType3>
+          <PropertyName3>firstName</PropertyName3>
+          <repetitionCountfirstName>0</repetitionCountfirstName>
+          <repeatValuesfirstName>false</repeatValuesfirstName>
+          <NameTypeName3>FirstName</NameTypeName3>
+          <NameGenderName3>Any</NameGenderName3>
+          <GeneratorType4>NAME</GeneratorType4>
+          <PropertyName4>lastName</PropertyName4>
+          <repetitionCountlastName>0</repetitionCountlastName>
+          <repeatValueslastName>false</repeatValueslastName>
+          <NameTypeName4>LastName</NameTypeName4>
+          <NameGenderName4>Any</NameGenderName4>
+          <GeneratorType5>SET</GeneratorType5>
+          <PropertyName5>gender</PropertyName5>
+          <repetitionCountgender>0</repetitionCountgender>
+          <repeatValuesgender>false</repeatValuesgender>
+          <ValueFromSetIsSequenceValuegender>false</ValueFromSetIsSequenceValuegender>
+          <ValueFromSetStringsgender>Male</ValueFromSetStringsgender>
+          <ValueFromSetStringsgender>Female</ValueFromSetStringsgender>
+          <GeneratorType6>SET</GeneratorType6>
+          <PropertyName6>maritalStatus</PropertyName6>
+          <repetitionCountmaritalStatus>0</repetitionCountmaritalStatus>
+          <repeatValuesmaritalStatus>false</repeatValuesmaritalStatus>
+          <ValueFromSetIsSequenceValuemaritalStatus>false</ValueFromSetIsSequenceValuemaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Single</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Married</ValueFromSetStringsmaritalStatus>
+          <GeneratorType7>SET</GeneratorType7>
+          <PropertyName7>employmentStatus</PropertyName7>
+          <repetitionCountemploymentStatus>0</repetitionCountemploymentStatus>
+          <repeatValuesemploymentStatus>false</repeatValuesemploymentStatus>
+          <ValueFromSetIsSequenceValueemploymentStatus>false</ValueFromSetIsSequenceValueemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Student</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Employed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Unemployed</ValueFromSetStringsemploymentStatus>
+          <GeneratorType8>TIME</GeneratorType8>
+          <PropertyName8>DOB</PropertyName8>
+          <repetitionCountDOB>0</repetitionCountDOB>
+          <repeatValuesDOB>false</repeatValuesDOB>
+          <DateTimeDataGeneratorCustomFormatDOB>YYYY-MM-D</DateTimeDataGeneratorCustomFormatDOB>
+          <DateTimeDataGeneratorFormatDOB>Custom</DateTimeDataGeneratorFormatDOB>
+          <DateTimeDataGeneratorIsSequentDOB>true</DateTimeDataGeneratorIsSequentDOB>
+          <DateTimeDataGeneratorStepDaysDOB>1</DateTimeDataGeneratorStepDaysDOB>
+          <DateTimeDataGeneratorStepHoursDOB>1</DateTimeDataGeneratorStepHoursDOB>
+          <DateTimeDataGeneratorStepMinsDOB>1</DateTimeDataGeneratorStepMinsDOB>
+          <DateTimeDataGeneratorStepSecondsDOB>1</DateTimeDataGeneratorStepSecondsDOB>
+          <DateTimeDataGeneratorMinDateDOB>442805662924</DateTimeDataGeneratorMinDateDOB>
+          <DateTimeDataGeneratorMaxDateDOB>947727262924</DateTimeDataGeneratorMaxDateDOB>
+          <GeneratorType9>STR</GeneratorType9>
+          <PropertyName9>languagePref</PropertyName9>
+          <repetitionCountlanguagePref>0</repetitionCountlanguagePref>
+          <repeatValueslanguagePref>false</repeatValueslanguagePref>
+          <PasswordDataGeneratorUseSpaceslanguagePref>false</PasswordDataGeneratorUseSpaceslanguagePref>
+          <PasswordDataGeneratorUsePunctuationMarkslanguagePref>false</PasswordDataGeneratorUsePunctuationMarkslanguagePref>
+          <PasswordDataGeneratorUseLetterslanguagePref>true</PasswordDataGeneratorUseLetterslanguagePref>
+          <PasswordDataGeneratorUseDigitslanguagePref>false</PasswordDataGeneratorUseDigitslanguagePref>
+          <PasswordDataGeneratorMaxCharacterCountlanguagePref>10</PasswordDataGeneratorMaxCharacterCountlanguagePref>
+          <PasswordDataGeneratorMinCharacterCountlanguagePref>5</PasswordDataGeneratorMinCharacterCountlanguagePref>
+          <GeneratorType10>STR</GeneratorType10>
+          <PropertyName10>password</PropertyName10>
+          <repetitionCountpassword>0</repetitionCountpassword>
+          <repeatValuespassword>false</repeatValuespassword>
+          <PasswordDataGeneratorUseSpacespassword>false</PasswordDataGeneratorUseSpacespassword>
+          <PasswordDataGeneratorUsePunctuationMarkspassword>false</PasswordDataGeneratorUsePunctuationMarkspassword>
+          <PasswordDataGeneratorUseLetterspassword>true</PasswordDataGeneratorUseLetterspassword>
+          <PasswordDataGeneratorUseDigitspassword>false</PasswordDataGeneratorUseDigitspassword>
+          <PasswordDataGeneratorMaxCharacterCountpassword>10</PasswordDataGeneratorMaxCharacterCountpassword>
+          <PasswordDataGeneratorMinCharacterCountpassword>5</PasswordDataGeneratorMinCharacterCountpassword>
+          <GeneratorType11>COUNTRY</GeneratorType11>
+          <PropertyName11>addressType</PropertyName11>
+          <repetitionCountaddressType>0</repetitionCountaddressType>
+          <repeatValuesaddressType>false</repeatValuesaddressType>
+          <GeneratorType12>ADDRESS</GeneratorType12>
+          <PropertyName12>addressLine</PropertyName12>
+          <repetitionCountaddressLine>0</repetitionCountaddressLine>
+          <repeatValuesaddressLine>false</repeatValuesaddressLine>
+          <AddressDataGeneratorRestrictLength>false</AddressDataGeneratorRestrictLength>
+          <AddressDataGeneratorMaxLength>20</AddressDataGeneratorMaxLength>
+          <GeneratorType13>CITY</GeneratorType13>
+          <PropertyName13>city</PropertyName13>
+          <repetitionCountcity>0</repetitionCountcity>
+          <repeatValuescity>false</repeatValuescity>
+          <GeneratorType14>STATE</GeneratorType14>
+          <PropertyName14>state</PropertyName14>
+          <repetitionCountstate>0</repetitionCountstate>
+          <repeatValuesstate>false</repeatValuesstate>
+          <StatesCountrystate>United States</StatesCountrystate>
+          <StatesFormatstate>Full</StatesFormatstate>
+          <GeneratorType15>USZIP</GeneratorType15>
+          <PropertyName15>postalCode</PropertyName15>
+          <repetitionCountpostalCode>0</repetitionCountpostalCode>
+          <repeatValuespostalCode>false</repeatValuespostalCode>
+          <USZipCodesDataGeneratorFormatpostalCode>XXXXX</USZipCodesDataGeneratorFormatpostalCode>
+          <GeneratorType16>INT</GeneratorType16>
+          <PropertyName16>countryCode</PropertyName16>
+          <repetitionCountcountryCode>0</repetitionCountcountryCode>
+          <repeatValuescountryCode>false</repeatValuescountryCode>
+          <IntegerDataGeneratorMinValuecountryCode>1</IntegerDataGeneratorMinValuecountryCode>
+          <IntegerDataGeneratorMaxValuecountryCode>99</IntegerDataGeneratorMaxValuecountryCode>
+          <IntegerDataGeneratorStepValuecountryCode>1</IntegerDataGeneratorStepValuecountryCode>
+          <IntegerDataGeneratorConsequentValuescountryCode>false</IntegerDataGeneratorConsequentValuescountryCode>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>username</con:property>
+      <con:property>email</con:property>
+      <con:property>title</con:property>
+      <con:property>firstName</con:property>
+      <con:property>lastName</con:property>
+      <con:property>gender</con:property>
+      <con:property>maritalStatus</con:property>
+      <con:property>employmentStatus</con:property>
+      <con:property>DOB</con:property>
+      <con:property>languagePref</con:property>
+      <con:property>password</con:property>
+      <con:property>addressType</con:property>
+      <con:property>addressLine</con:property>
+      <con:property>city</con:property>
+      <con:property>state</con:property>
+      <con:property>postalCode</con:property>
+      <con:property>countryCode</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="9b315278-f641-4664-97a2-38f72d1f3c1b">
+    <con:settings/>
+    <con:config service="Insurance" resourcePath="/api/v1/secondary-user" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="b61b520b-e4a8-4419-b9a0-3c9c068f2945" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request>{\r
+   "primaryPersonId" : "${#[Regression Test Suite#Get Current User#REST Request]#Response#$['data']['primaryPerson']['id']}",\r
+   "secondaryPerson" : {\r
+      "username" : "${Data Source#username}",\r
+      "email" : "${Data Source#email}",\r
+      "title" : "${Data Source#title}",\r
+      "firstName" : "${Data Source#firstName}",\r
+      "lastName" : "${Data Source#lastName}",\r
+      "gender" : "${Data Source#gender}",\r
+      "maritalStatus" : "${Data Source#maritalStatus}",\r
+      "employmentStatus" : "${Data Source#employmentStatus}",\r
+      "dateOfBirth" : "${Data Source#DOB}",\r
+      "languagePref" : "${Data Source#languagePref}",\r
+      "password" : "${Data Source#password}"\r
+   },\r
+   "secondaryPersonMailingAddress" : {\r
+      "addressType" : "${Data Source#addressType}",\r
+      "addressLine1" : "${Data Source#addressLine}",\r
+      "city" : "${Data Source#city}",\r
+      "state" : "${Data Source#state}",\r
+      "postalCode" : "${Data Source#postalCode}",\r
+      "countryCode" : "${Data Source#countryCode}"\r
+   }\r
+}</con:request>
+        <con:originalUri>https://www.test-insurance.com/api/v1/secondary-user</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="4da74b65-1669-44d0-bfeb-46cd516d5b32" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="e7959560-a5c1-486d-bf2e-282d893ac2e9" name="Response SLA">
+          <con:configuration>
+            <SLA>2000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

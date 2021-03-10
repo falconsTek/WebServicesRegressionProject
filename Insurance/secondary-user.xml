@@ -7,6 +7,22 @@
   <con:method name="Method 1" id="5ddab2e8-b048-437d-8871-8eb771b9b5e5" method="POST">
     <con:settings/>
     <con:parameters/>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>422</con:status>
+      <con:params/>
+      <con:element xmlns:sec="https://www.test-insurance.com/api/v1/secondary-user">sec:Fault</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:sec="https://www.test-insurance.com/api/v1/secondary-user">sec:Response</con:element>
+    </con:representation>
     <con:request name="Request 1" id="b61b520b-e4a8-4419-b9a0-3c9c068f2945" mediaType="application/json" postQueryString="false">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

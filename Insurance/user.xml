@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="user" path="/api/v1/user" id="6ea83f77-72bc-4e23-a7e5-707faa54ebc3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="user" path="/api/v1/user/{userID}" id="6ea83f77-72bc-4e23-a7e5-707faa54ebc3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="6ea83f77-72bc-4e23-a7e5-707faa54ebc3fileName">user</con:setting>
   </con:settings>
   <con:parameters>
     <con:parameter>
       <con:name>userID</con:name>
-      <con:value>75</con:value>
+      <con:value/>
       <con:style>TEMPLATE</con:style>
-      <con:default>75</con:default>
+      <con:default/>
     </con:parameter>
   </con:parameters>
   <con:method name="Method 1" id="7e8eb4c6-bd53-49d3-9503-ecb0f6013fbb" method="GET">
@@ -25,6 +25,12 @@
       <con:status>200</con:status>
       <con:params/>
       <con:element xmlns:user="https://www.test-insurance.com/api/v1/user">user:Response</con:element>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>503 404</con:status>
+      <con:params/>
+      <con:element xmlns:user="https://www.test-insurance.com/api/v1/user">user:Fault</con:element>
     </con:representation>
     <con:request name="Request 1" id="845f6ed4-d7f1-4e3f-87d8-5f4323bc4948" mediaType="application/json">
       <con:settings>
@@ -77,7 +83,9 @@
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-      <con:parameters/>
+      <con:parameters>
+        <con:entry key="userID" value=""/>
+      </con:parameters>
       <con:parameterOrder>
         <con:entry>userID</con:entry>
       </con:parameterOrder>
@@ -108,6 +116,22 @@
   <con:method name="Method 4" id="a98e865a-6849-47ad-84b0-22fee8596d01" method="DELETE">
     <con:settings/>
     <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:ns="https://www.test-insurance.com/api/v1/user/266">ns:Response</con:element>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json; charset=utf-8</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:element xmlns:ns="https://www.test-insurance.com/api/v1/user/266">ns:Fault</con:element>
+    </con:representation>
     <con:request name="Request 1" id="08163aa7-d732-4b98-8c34-556a4a9c130b" mediaType="application/json" postQueryString="false">
       <con:settings>
         <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

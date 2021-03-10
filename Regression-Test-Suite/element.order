@@ -1,1 +1,4 @@
 Create-User.xml
+Get-Current-User.xml
+Add-Secondary-User.xml
+Delete-Current-User.xml
