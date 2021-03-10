@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="2e3708ff-754a-4582-8f3a-75fdc181565c" created="3.6.0" activeEnvironment="Default environment" name="Webservices Regression Project" authProfile="Berear" updated="3.6.0" encryptionMode="Not encrypted" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+  <con:settings>
+    <con:setting id="2e3708ff-754a-4582-8f3a-75fdc181565cfileName">Webservices-Regression-Project</con:setting>
+  </con:settings>
   <con:requirements/>
   <con:properties/>
   <con:wssContainer/>
