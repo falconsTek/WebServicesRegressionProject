@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="60636764-4899-4ec7-8a4a-8e12b3a6ffd9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Create User" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="60636764-4899-4ec7-8a4a-8e12b3a6ffd9fileName">Create-User</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Data Source" id="00db42cc-e431-4e06-827b-31e805dfd112">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>19</generatorsTotalNumber>
+          <lastSelectedProperty>6</lastSelectedProperty>
+          <GeneratorType0>EMAIL</GeneratorType0>
+          <PropertyName0>email</PropertyName0>
+          <repetitionCountemail>0</repetitionCountemail>
+          <repeatValuesemail>false</repeatValuesemail>
+          <GeneratorType1>SET</GeneratorType1>
+          <PropertyName1>title</PropertyName1>
+          <repetitionCounttitle>0</repetitionCounttitle>
+          <repeatValuestitle>false</repeatValuestitle>
+          <ValueFromSetIsSequenceValuetitle>false</ValueFromSetIsSequenceValuetitle>
+          <ValueFromSetStringstitle>Mr.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Ms.</ValueFromSetStringstitle>
+          <ValueFromSetStringstitle>Sample 3</ValueFromSetStringstitle>
+          <GeneratorType2>NAME</GeneratorType2>
+          <PropertyName2>firstName</PropertyName2>
+          <repetitionCountfirstName>0</repetitionCountfirstName>
+          <repeatValuesfirstName>false</repeatValuesfirstName>
+          <NameTypeName2>FirstName</NameTypeName2>
+          <NameGenderName2>Any</NameGenderName2>
+          <GeneratorType3>NAME</GeneratorType3>
+          <PropertyName3>lastName</PropertyName3>
+          <repetitionCountlastName>0</repetitionCountlastName>
+          <repeatValueslastName>false</repeatValueslastName>
+          <NameTypeName3>LastName</NameTypeName3>
+          <NameGenderName3>Male</NameGenderName3>
+          <GeneratorType4>SET</GeneratorType4>
+          <PropertyName4>gender</PropertyName4>
+          <repetitionCountgender>0</repetitionCountgender>
+          <repeatValuesgender>false</repeatValuesgender>
+          <ValueFromSetIsSequenceValuegender>false</ValueFromSetIsSequenceValuegender>
+          <ValueFromSetStringsgender>Male</ValueFromSetStringsgender>
+          <ValueFromSetStringsgender>Sample 3</ValueFromSetStringsgender>
+          <GeneratorType5>SET</GeneratorType5>
+          <PropertyName5>maritalStatus</PropertyName5>
+          <repetitionCountmaritalStatus>0</repetitionCountmaritalStatus>
+          <repeatValuesmaritalStatus>false</repeatValuesmaritalStatus>
+          <ValueFromSetIsSequenceValuemaritalStatus>false</ValueFromSetIsSequenceValuemaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Single</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Married</ValueFromSetStringsmaritalStatus>
+          <ValueFromSetStringsmaritalStatus>Sample 3</ValueFromSetStringsmaritalStatus>
+          <GeneratorType6>TIME</GeneratorType6>
+          <PropertyName6>DOB</PropertyName6>
+          <repetitionCountDOB>0</repetitionCountDOB>
+          <repeatValuesDOB>false</repeatValuesDOB>
+          <DateTimeDataGeneratorCustomFormatDOB>YYYY-MM-D</DateTimeDataGeneratorCustomFormatDOB>
+          <DateTimeDataGeneratorFormatDOB>Custom</DateTimeDataGeneratorFormatDOB>
+          <DateTimeDataGeneratorIsSequentDOB>true</DateTimeDataGeneratorIsSequentDOB>
+          <DateTimeDataGeneratorStepDaysDOB>1</DateTimeDataGeneratorStepDaysDOB>
+          <DateTimeDataGeneratorStepHoursDOB>1</DateTimeDataGeneratorStepHoursDOB>
+          <DateTimeDataGeneratorStepMinsDOB>1</DateTimeDataGeneratorStepMinsDOB>
+          <DateTimeDataGeneratorStepSecondsDOB>1</DateTimeDataGeneratorStepSecondsDOB>
+          <DateTimeDataGeneratorMinDateDOB>442799425891</DateTimeDataGeneratorMinDateDOB>
+          <DateTimeDataGeneratorMaxDateDOB>947721025891</DateTimeDataGeneratorMaxDateDOB>
+          <GeneratorType7>STR</GeneratorType7>
+          <PropertyName7>languagePref</PropertyName7>
+          <repetitionCountlanguagePref>0</repetitionCountlanguagePref>
+          <repeatValueslanguagePref>false</repeatValueslanguagePref>
+          <PasswordDataGeneratorUseSpaceslanguagePref>false</PasswordDataGeneratorUseSpaceslanguagePref>
+          <PasswordDataGeneratorUsePunctuationMarkslanguagePref>false</PasswordDataGeneratorUsePunctuationMarkslanguagePref>
+          <PasswordDataGeneratorUseLetterslanguagePref>true</PasswordDataGeneratorUseLetterslanguagePref>
+          <PasswordDataGeneratorUseDigitslanguagePref>false</PasswordDataGeneratorUseDigitslanguagePref>
+          <PasswordDataGeneratorMaxCharacterCountlanguagePref>5</PasswordDataGeneratorMaxCharacterCountlanguagePref>
+          <PasswordDataGeneratorMinCharacterCountlanguagePref>3</PasswordDataGeneratorMinCharacterCountlanguagePref>
+          <GeneratorType8>COUNTRY</GeneratorType8>
+          <PropertyName8>addressType</PropertyName8>
+          <repetitionCountaddressType>0</repetitionCountaddressType>
+          <repeatValuesaddressType>false</repeatValuesaddressType>
+          <GeneratorType9>ADDRESS</GeneratorType9>
+          <PropertyName9>addressline1</PropertyName9>
+          <repetitionCountaddressline1>0</repetitionCountaddressline1>
+          <repeatValuesaddressline1>false</repeatValuesaddressline1>
+          <AddressDataGeneratorRestrictLength>false</AddressDataGeneratorRestrictLength>
+          <AddressDataGeneratorMaxLength>20</AddressDataGeneratorMaxLength>
+          <GeneratorType10>CITY</GeneratorType10>
+          <PropertyName10>city</PropertyName10>
+          <repetitionCountcity>0</repetitionCountcity>
+          <repeatValuescity>false</repeatValuescity>
+          <GeneratorType11>STATE</GeneratorType11>
+          <PropertyName11>state</PropertyName11>
+          <repetitionCountstate>0</repetitionCountstate>
+          <repeatValuesstate>false</repeatValuesstate>
+          <StatesCountrystate>United States</StatesCountrystate>
+          <StatesFormatstate>Full</StatesFormatstate>
+          <GeneratorType12>USZIP</GeneratorType12>
+          <PropertyName12>postalCode</PropertyName12>
+          <repetitionCountpostalCode>0</repetitionCountpostalCode>
+          <repeatValuespostalCode>false</repeatValuespostalCode>
+          <USZipCodesDataGeneratorFormatpostalCode>XXXXX</USZipCodesDataGeneratorFormatpostalCode>
+          <GeneratorType13>INT</GeneratorType13>
+          <PropertyName13>countryCode</PropertyName13>
+          <repetitionCountcountryCode>0</repetitionCountcountryCode>
+          <repeatValuescountryCode>false</repeatValuescountryCode>
+          <IntegerDataGeneratorMinValuecountryCode>1</IntegerDataGeneratorMinValuecountryCode>
+          <IntegerDataGeneratorMaxValuecountryCode>99</IntegerDataGeneratorMaxValuecountryCode>
+          <IntegerDataGeneratorStepValuecountryCode>1</IntegerDataGeneratorStepValuecountryCode>
+          <IntegerDataGeneratorConsequentValuescountryCode>false</IntegerDataGeneratorConsequentValuescountryCode>
+          <GeneratorType14>PHONE</GeneratorType14>
+          <PropertyName14>phoneNumber</PropertyName14>
+          <repetitionCountphoneNumber>0</repetitionCountphoneNumber>
+          <repeatValuesphoneNumber>false</repeatValuesphoneNumber>
+          <PhoneTemplateTypephoneNumber>XXX-XXX-XXXX</PhoneTemplateTypephoneNumber>
+          <GeneratorType15>STR</GeneratorType15>
+          <PropertyName15>phoneExtension</PropertyName15>
+          <repetitionCountphoneExtension>0</repetitionCountphoneExtension>
+          <repeatValuesphoneExtension>false</repeatValuesphoneExtension>
+          <PasswordDataGeneratorUseSpacesphoneExtension>false</PasswordDataGeneratorUseSpacesphoneExtension>
+          <PasswordDataGeneratorUsePunctuationMarksphoneExtension>false</PasswordDataGeneratorUsePunctuationMarksphoneExtension>
+          <PasswordDataGeneratorUseLettersphoneExtension>true</PasswordDataGeneratorUseLettersphoneExtension>
+          <PasswordDataGeneratorUseDigitsphoneExtension>false</PasswordDataGeneratorUseDigitsphoneExtension>
+          <PasswordDataGeneratorMaxCharacterCountphoneExtension>2</PasswordDataGeneratorMaxCharacterCountphoneExtension>
+          <PasswordDataGeneratorMinCharacterCountphoneExtension>2</PasswordDataGeneratorMinCharacterCountphoneExtension>
+          <GeneratorType16>SET</GeneratorType16>
+          <PropertyName16>phoneTime</PropertyName16>
+          <repetitionCountphoneTime>0</repetitionCountphoneTime>
+          <repeatValuesphoneTime>false</repeatValuesphoneTime>
+          <ValueFromSetIsSequenceValuephoneTime>false</ValueFromSetIsSequenceValuephoneTime>
+          <ValueFromSetStringsphoneTime>morning</ValueFromSetStringsphoneTime>
+          <ValueFromSetStringsphoneTime>evening</ValueFromSetStringsphoneTime>
+          <ValueFromSetStringsphoneTime>Sample 3</ValueFromSetStringsphoneTime>
+          <GeneratorType17>SET</GeneratorType17>
+          <PropertyName17>phoneType</PropertyName17>
+          <repetitionCountphoneType>0</repetitionCountphoneType>
+          <repeatValuesphoneType>false</repeatValuesphoneType>
+          <ValueFromSetIsSequenceValuephoneType>false</ValueFromSetIsSequenceValuephoneType>
+          <ValueFromSetStringsphoneType>home</ValueFromSetStringsphoneType>
+          <ValueFromSetStringsphoneType>office</ValueFromSetStringsphoneType>
+          <ValueFromSetStringsphoneType>Sample 3</ValueFromSetStringsphoneType>
+          <GeneratorType18>SET</GeneratorType18>
+          <PropertyName18>employmentStatus</PropertyName18>
+          <repetitionCountemploymentStatus>0</repetitionCountemploymentStatus>
+          <repeatValuesemploymentStatus>false</repeatValuesemploymentStatus>
+          <ValueFromSetIsSequenceValueemploymentStatus>false</ValueFromSetIsSequenceValueemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Student</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Employed</ValueFromSetStringsemploymentStatus>
+          <ValueFromSetStringsemploymentStatus>Sample 3</ValueFromSetStringsemploymentStatus>
+          <escapeSpaceSequence/>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>email</con:property>
+      <con:property>title</con:property>
+      <con:property>firstName</con:property>
+      <con:property>lastName</con:property>
+      <con:property>gender</con:property>
+      <con:property>maritalStatus</con:property>
+      <con:property>DOB</con:property>
+      <con:property>languagePref</con:property>
+      <con:property>addressType</con:property>
+      <con:property>addressline1</con:property>
+      <con:property>city</con:property>
+      <con:property>state</con:property>
+      <con:property>postalCode</con:property>
+      <con:property>countryCode</con:property>
+      <con:property>phoneNumber</con:property>
+      <con:property>phoneExtension</con:property>
+      <con:property>phoneTime</con:property>
+      <con:property>phoneType</con:property>
+      <con:property>employmentStatus</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="37da1a19-4ed3-4c69-baa2-64de3c4ad1bb">
+    <con:settings/>
+    <con:config service="Insurance" resourcePath="/api/v1/user" methodName="Method 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="16fea692-7537-4215-a81a-eedde5782275" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://www.test-insurance.com</con:endpoint>
+        <con:request>{\r
+   "primaryPerson" : {\r
+      "email" : "${Data Source#email}",\r
+      "title" : "${Data Source#title}",\r
+      "firstName" : "${Data Source#firstName}",\r
+      "lastName" : "${Data Source#lastName}",\r
+      "gender" : "${Data Source#gender}",\r
+      "maritalStatus" : "${Data Source#maritalStatus}",\r
+      "employmentStatus" : "${Data Source#employmentStatus}",\r
+      "dateOfBirth" : "${Data Source#DOB}",\r
+      "languagePref" : "${Data Source#languagePref}"\r
+   },\r
+   "primaryPersonMailingAddress" : {\r
+      "addressType" : "${Data Source#addressType}",\r
+      "addressLine1" : "${Data Source#addressline1}",\r
+      "city" : "${Data Source#city}",\r
+      "state" : "${Data Source#state}",\r
+      "postalCode" : "${Data Source#postalCode}",\r
+      "countryCode" : "${Data Source#countryCode}"\r
+   },\r
+   "primaryPersonPhone" : {\r
+      "phoneNumber" : "${Data Source#phoneNumber}",\r
+      "phoneExtension" : "${Data Source#phoneExtension}",\r
+      "phoneTime" : "${Data Source#phoneTime}",\r
+      "phoneType" : "${Data Source#phoneType}"\r
+   }\r
+}</con:request>
+        <con:originalUri>https://www.test-insurance.com/api/v1/user</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="856faf7d-2e10-4483-9341-85f709345bd6" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Sensitive Information Exposure" id="262ec0fe-3988-4378-8e6a-b55c4ba815c8" name="Sensitive Information Exposure">
+          <con:configuration>
+            <AssertionSpecificExposureList>~(?s).*Runtime (E|e)rror.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*SQLSTATE: [A-Z0-9].*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*(s|S)tack:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*(s|S)yntax (e|E)rror\s.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*\w+/\d{1,2}(\.\d{1,3})+.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*Invalid column name\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*
+            (ORA|EXP|IMP|KUP|UDE|UDI|DBV|LCD|QSM|OCI|RMAN|LFI|PLS|PLQ|AMD|CLSR|PROC|PROT|TNS|NNC|NLP|NNF|NMP|NCR|NZE|O2F|O2I|O2U|PCB|PCC|SQL|AUD|IMG|VID|DRG|LPX|LSX)-\d{5}\s
+        .*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*(p|P)owered by:? ([a-zA-Z]+)( [a-zA-Z]+){0,3}( |/)\d\.\d{1,2}\.\d{1,3}.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*at [\w\$]+(\.[\w\$&lt;>\[\],]+|\.\.ctor)+(\((([\w\$&lt;>\`\[\]]+ [\w\$&lt;>]+, )*(([\w\$&lt;>\`\[\]]+
+            [\w\$&lt;>]+)))\)|\(\))
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*&lt;\w+:frame\s*class=".*"\s*line=".*"\s*method=".*"\s*/>.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*Traceback \(most recent call last\):.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*((I|i)ncorrect|(I|i)nvalid) (s|S)yntax.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*(s|S)tack ?(t|T)race.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*(e|E)rror was:\s.*###[Database error messages] Internal database information can be misused by hackers</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*(v|V)ersion:? \d\.\d{1,2}\.{1,3}-?.*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*from [\w\$]+(\.[\w\$&lt;>]+)+:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*Error in process &lt;\d+\.\d+\.\d+> with exit value:.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*STACK\s?TRACE.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*Warning: [\w]+\(\) .+ in .+ on line \d{1,6}.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*((A|a)pache|vBulletin|MySQL|PostgreSQL|phpBB|Internet Information Services)( |/)\d{1,2}(\.\d{1,3})+
+        .*###[Version x.y.z] Exposing version numbers gives
+            unnecessary hints on your systems vulnerabilities</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*at [a-zA-Z][\w\$]*(\.[a-zA-Z][\w\$]*)+\((Unknown Source|Native
+            Method|[a-zA-Z][\w\$]*\.([a-zA-Z]{3,5}):\d+)\)
+        .*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*[^\s]+\.rb:\d+:in `.+'.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <AssertionSpecificExposureList>~(?s).*File ".+", line [0-9]{1,6}, in.*###[Stacktrace] Can give hackers information about which software or language you are using</AssertionSpecificExposureList>
+            <IncludeProjectSpecific>true</IncludeProjectSpecific>
+            <IncludeGlobal>false</IncludeGlobal>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="561705a1-fd57-4b1e-93ef-4113d9278ee2" name="Response SLA">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="748a3644-f8e8-4550-8cd4-6e2f909c1cdc" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:meta[1]/ns1:code[1]</con:xpath>
+              <con:element>code</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>200</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:meta[1]/ns1:status[1]</con:xpath>
+              <con:element>status</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>success</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:account[1]/ns1:accountId[1]</con:xpath>
+              <con:element>accountId</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>156</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:account[1]/ns1:createDate[1]</con:xpath>
+              <con:element>createDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>2021-03-10 00:03:29</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:email[1]</con:xpath>
+              <con:element>email</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['email']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:title[1]</con:xpath>
+              <con:element>title</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['title']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:firstName[1]</con:xpath>
+              <con:element>firstName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['firstName']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:lastName[1]</con:xpath>
+              <con:element>lastName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['lastName']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:gender[1]</con:xpath>
+              <con:element>gender</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['gender']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:maritalStatus[1]</con:xpath>
+              <con:element>maritalStatus</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['maritalStatus']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:employmentStatus[1]</con:xpath>
+              <con:element>employmentStatus</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['employmentStatus']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:dateOfBirth[1]</con:xpath>
+              <con:element>dateOfBirth</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['dateOfBirth']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='https://www.test-insurance.com/api/v1/user';
+//ns1:Response[1]/ns1:data[1]/ns1:primaryPerson[1]/ns1:languagePref[1]</con:xpath>
+              <con:element>languagePref</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['primaryPerson']['languagePref']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="https://www.test-insurance.com/api/v1/user">
+   <meta>
+      <code>200</code>
+      <status>success</status>
+   </meta>
+   <data>
+      <account>
+         <accountId>156</accountId>
+         <createDate>2021-03-10 00:03:29</createDate>
+      </account>
+      <primaryPerson>
+         <email>charde.hines@mail.gov</email>
+         <title>Ms.</title>
+         <firstName>Daria</firstName>
+         <lastName>Bullock</lastName>
+         <gender>Male</gender>
+         <maritalStatus>Single</maritalStatus>
+         <employmentStatus>Student</employmentStatus>
+         <dateOfBirth>1984-01-12</dateOfBirth>
+         <languagePref>jsQ</languagePref>
+      </primaryPerson>
+   </data>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="userID" value=""/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>userID</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="60fcba7b-12ab-4dc1-b931-6662f197fcbf" disabled="true">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>REST Request</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="jdbc" name="JDBC Request" id="59d27742-e93b-4cac-af08-96a4c7436656">
+    <con:settings>
+      <con:setting id="prettyPrintResponse">true</con:setting>
+    </con:settings>
+    <con:config xsi:type="con:JdbcRequestTestStep" convertColumnNamesToUpperCase="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dbConnectionName>posgresql</con:dbConnectionName>
+      <con:driver>org.postgresql.Driver</con:driver>
+      <con:connectionString>jdbc:postgresql://localhost:5432/dvdrental?user=postgres&amp;password=PASS_VALUE</con:connectionString>
+      <con:password>root</con:password>
+      <con:connectionProperties/>
+      <con:query>select * from actor
+where Actor_ID = ${REST Request#Response#$['data']['account']['accountId']}</con:query>
+      <con:properties/>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>00db42cc-e431-4e06-827b-31e805dfd112</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>37da1a19-4ed3-4c69-baa2-64de3c4ad1bb</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>60fcba7b-12ab-4dc1-b931-6662f197fcbf</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>
